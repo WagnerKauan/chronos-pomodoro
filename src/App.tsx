@@ -1,11 +1,25 @@
-import "./styles/theme.css";
-import "./styles/global.css";
+import { Container } from './components/Container';
+import { Logo } from './components/Logo';
+
+import './styles/theme.css';
+import './styles/global.css';
+import { Menu } from './components/menu';
+import { CountDown } from './components/CountDown';
 
 function App() {
-
   return (
     <>
-      <h1>Olá Mundo!</h1>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Menu />
+      </Container>
+
+      <Container>
+        <CountDown />
+      </Container>
     </>
   );
 }
